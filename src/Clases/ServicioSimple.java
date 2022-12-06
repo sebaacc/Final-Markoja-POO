@@ -13,6 +13,16 @@ public class ServicioSimple extends Servicio {
             return getPrecioBase();
         }
     }
+
+    @Override
+    public String toString() {
+        return this.getNombreServicio() +
+                "Descripción = " +
+                "Precio base = " + precioBase +
+                ", incluye colocación = " + incluyeColocacion +
+                '}' + '\n';
+    }
+
     //Getters y setters
     public double getPrecioBase() {
         return precioBase;
