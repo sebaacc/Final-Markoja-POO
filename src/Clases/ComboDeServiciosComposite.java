@@ -2,7 +2,7 @@ package Clases;
 
 import java.util.ArrayList;
 
-public class Composite {
+public class ComboDeServiciosComposite {
     private ArrayList<ALGO> algo = new ArrayList();
 
 

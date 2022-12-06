@@ -3,14 +3,34 @@ package Clases;
 import java.util.ArrayList;
 
 public class Empresa {
+    //Atributos
+    private String razonSocial;
+    private ArrayList<Servicio> servicios = new ArrayList();
 
-    private ArrayList<ALGO> algo = new ArrayList();
-
-    public void agregarALGO(UnidadDeTrabajo unidad){
-        this.algo.add(unidad);
+    //Constructor
+    public Empresa(String razonSocial) {
+        this.razonSocial = razonSocial;
     }
 
-    public void quitarALGO(UnidadDeTrabajo unidad){
-        this.algo.remove(unidad);
+    //Métodos
+    public void agregarServicio(Servicio servicio){
+        this.servicios.add(servicio);
+    }
+
+    public void quitarServicio(Servicio servicio){
+        this.servicios.remove(servicio);
+    }
+
+    public String mostrarServiciosDisponibles(){
+
+    }
+
+    //Getter y setter razonSocial
+    public String getRazonSocial() {
+        return razonSocial;
+    }
+
+    public void setRazonSocial(String razonSocial) {
+        this.razonSocial = razonSocial;
     }
 }
