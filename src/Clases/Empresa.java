@@ -22,10 +22,11 @@ public class Empresa {
     }
 
     public String mostrarServiciosDisponibles(){
-
-
-
-
+        String listadoServicios = "";
+        for (Servicio servicio : servicios) {
+            listadoServicios += servicio.toString();
+        }
+        return listadoServicios;
     }
 
     //Getter y setter razonSocial

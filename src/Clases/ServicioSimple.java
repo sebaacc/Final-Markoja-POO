@@ -17,9 +17,9 @@ public class ServicioSimple extends Servicio {
     @Override
     public String toString() {
         return this.getNombreServicio() +
-                "Descripción = " +
+                "Descripcion = " +
                 "Precio base = " + precioBase +
-                ", incluye colocación = " + incluyeColocacion +
+                ", incluye colocacion = " + incluyeColocacion +
                 '}' + '\n';
     }
 

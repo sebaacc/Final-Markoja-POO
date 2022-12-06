@@ -16,14 +16,6 @@ public class ComboDeServiciosComposite extends Servicio{
         this.comboDeServicios.remove(servicio);
     }
 
-    public String mostrarServiciosCombo() {
-        String listadoServicios = "";
-        for (ServicioSimple servicio : comboDeServicios) {
-            listadoServicios += servicio.toString();
-        }
-        return listadoServicios;
-    }
-
     @Override
     public double calcularPrecio() {
         double precioTotal = 0;
@@ -32,6 +24,13 @@ public class ComboDeServiciosComposite extends Servicio{
         }
         double precioTotalConDescuento = precioTotal - (precioTotal * this.getDescuento());
         return precioTotalConDescuento;
+    }
+
+    @Override
+    public String toString() {
+        return "ComboDeServiciosComposite{" +
+                "comboDeServicios=" + comboDeServicios +
+                '}';
     }
 
     //getter y setter de descuento
