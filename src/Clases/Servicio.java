@@ -1,4 +1,8 @@
 package Clases;
 
-public class Servicio {
+public abstract class Servicio {
+    //Atributos
+    private String nombreServicio, descripcion;
+    //Métodos
+    public abstract double calcularPrecio();
 }
