@@ -28,8 +28,9 @@ public class ComboDeServiciosComposite extends Servicio{
 
     @Override
     public String toString() {
-        return "ComboDeServiciosComposite{" +
+        return this.getNombreServicio() + " {" +
                 "comboDeServicios=" + comboDeServicios +
+                ", precio total del combo de servicios: " + this.calcularPrecio() +
                 '}';
     }
 
